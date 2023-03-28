@@ -1,0 +1,171 @@
+#cloud-solutions{
+    padding: 100px 0 70px;
+    background-color: $bg-color;
+    p{
+        @include text;
+    }
+    .img-main{
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 30px;
+    }
+
+    .post-gallery{
+        .gallery-item{
+            a{
+                height: 185px;
+                display: inline-block;
+                width: 100%;
+                margin-bottom: 30px;
+                overflow: hidden;
+                border-radius: 5px;
+                img{
+                    height: 100%;
+                    transition: 0.4s;
+                    object-fit: cover;
+                }
+                &:hover{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+    
+    .side-list{
+        padding: 0 30px;
+        background-color: white;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        overflow: hidden;
+        li{
+            height: 50px;
+            border-bottom: 1px solid $bg-color;
+            display: flex;
+            align-items: center;
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                line-height: 50px;
+                color: $secondary-color;
+                width: 100%;
+                position: relative;
+                z-index: 4;
+                i{
+                    font-size: 9px;
+                position: absolute;
+    
+                }
+                h5{
+                    line-height: 24px;
+                    height: 24px;
+                    margin: 0;
+                    font-size: 14px;
+                    margin-left: 30px;
+                    transition: 0.3s;
+                }
+                
+                span{
+                    float: right;
+                    border-radius: 100px;
+                    background-color: $main-color;
+                    height: 20px;
+                    line-height: 20px;
+                    padding: 0 10px;
+                    font-size: 10px;
+                    color: white;
+                }
+            }
+            &:hover{
+                h5{
+                    padding-left: 10px;
+                }
+            }
+        }
+        .active{
+            position: relative;
+            a{
+                color: white;
+                }
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                background-color: $main-color;
+                top: 0;
+                left: -30px;
+                height: 100%;
+                width: 356px;
+                z-index: 3;
+            }
+        }
+
+    
+    .contact-us{
+        background-image: url(/assets/images/blog-posts/5.jpg);
+        height: 230px;
+        border-radius: 5px;
+        overflow: hidden;
+        background-size: cover;
+    .overlay{
+        width: 100%;
+        height: 100%;
+        background: RGBA(88,92,233,0.8);
+        display: flex;
+        align-items: center;
+        .information{
+            text-align: center;
+            padding: 0 50px;
+            p{
+                font-size: 18px;
+                color: white;
+                margin-bottom: 30px;
+                font-weight: 700;
+            }
+            a{
+                @include button($line-height: 36px);
+                background-color: white;
+                color: $main-color;
+                border: none;
+            }
+        }
+    }
+    }
+    .pagination{
+        margin: 30px 0;
+        border-radius: 5px;
+        overflow: hidden;
+        justify-content: center;
+        li{
+            background-color: white;
+            margin: 0;
+            margin-left: -1px;
+            a{
+                padding: 6px 12px;
+                font-size: 14px;
+                border: 1px solid #dee2e6;
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+                color: $main-color;
+            }
+            &:hover{
+                background-color: $bg-color;
+            }
+            &:first-child {
+                a{
+                    border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                }
+            }
+            &:last-child {
+                a{
+                    border-top-right-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                }
+            }
+        }
+    }
+}

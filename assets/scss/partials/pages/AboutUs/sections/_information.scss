@@ -1,0 +1,39 @@
+#information{
+    padding-bottom: 100px;
+    .info-img-box{
+        border-radius: 5px;
+        overflow: hidden;
+        img{
+            transition: 0.5s;
+        }
+        &:hover{
+            img{
+                transform: scale(1.1);
+            }
+        }
+    }
+    .info-content{
+        background-color: white;
+        padding: 30px 30px 10px;
+        box-shadow: 0 2px 48px 0 rgba(0,0,0,0.08);
+        border-radius: 5px;
+        position: relative;
+        z-index: 3;
+        h2{
+            @include section-title;
+        }
+        p{
+            @include text;
+        }
+    }
+    @media only screen and (min-width:1200px){
+        .info-img-box{
+            width: 120%;
+        }
+    }
+    @media only screen and (max-width:1200px){
+        .info-img-box{
+            margin-bottom: 30px;
+        }
+    }
+}

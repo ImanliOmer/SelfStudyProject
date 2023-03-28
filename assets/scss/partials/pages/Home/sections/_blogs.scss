@@ -1,0 +1,46 @@
+#blogs{
+    padding: 100px 0 80px;
+    text-align: center;
+    .section-title{
+        @include section-title;
+    }
+    p{
+        @include text($margin-bottom:50px);
+    }
+    .blog-post{
+        margin-bottom: 30px;
+        .blog-img-box{
+            border-radius: 5px;
+            overflow: hidden;
+            height: 200px;
+            margin-bottom: 25px;
+            img{
+                width: 100%;
+            }
+        }
+        .blog-headline{
+            line-height: 34px;
+            font-size: 16px;
+            color: $secondary-color;
+            font-weight: 400;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 10px;
+            transition: 0.3s;
+            &:hover{
+                color: $main-color;
+            }
+        }
+        p{
+            @include text($margin-bottom:15px);
+            font-size: 14px;
+        }
+        .read-more{
+            @include button;
+            transition: 0.3s;
+            &:hover{
+                background-color: #4146e6;
+            }
+        }
+    }
+}

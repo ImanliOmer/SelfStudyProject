@@ -1,0 +1,85 @@
+#pricing{
+    padding: 100px 0 80px;
+    text-align: center;
+    background-color: $bg-color;
+    .section-title{
+        @include section-title;
+    }
+    p{
+        @include text($margin-bottom:50px);
+    }
+    .pricing-box{
+        background-color: white;
+        box-shadow: 0 2px 48px 0 rgba(0,0,0,0.08);
+        border-radius: 5px;
+        padding-bottom: 40px;
+        overflow: hidden;
+        margin-bottom: 32px;
+        .pricing-name{
+            height: 130px;
+            border-bottom: 1px solid $bg-color;
+            position: relative;
+            text-align: center;
+            h3{
+                text-transform: uppercase;
+                line-height: 130px;
+                font-size: 16px;
+                color: $secondary-color;
+                font-weight: 700;
+            }
+            span{
+                position: absolute;
+                bottom: -20px;
+                width: 40px;
+                line-height: 40px;
+                border-radius: 100%;
+                background-color: $bg-color;
+                margin: 0 auto;
+                left: 45.4%;
+                color: $main-color;
+            }
+        }
+        .active{
+            background-image: linear-gradient(135deg, #585CE9 0%, #5C83E3 100%);
+            h3{
+                color: white;
+            }
+        }
+        .pricing-body{
+            margin-top: 60px;
+            .price-monthly{
+                margin-bottom: 30px;
+                span{
+                    color: $main-color;
+                    font-weight: 700;
+                    font-size: 14px;
+                }
+                .currency{
+                    font-size: 20px;
+                    position: relative;
+                    top: -15px;
+                }
+                .price{
+                    font-size: 34px;
+                }
+            }
+            .plan-features{
+                margin-bottom: 40px;
+                li{
+                    margin-bottom: 12px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: $secondary-color;
+                    letter-spacing: 0.88px;
+                }
+                .disabled{
+                    color: #ccdcea;
+                    text-decoration: line-through;
+                }
+            }
+            a{
+                @include button;
+            }
+        }
+    }
+}

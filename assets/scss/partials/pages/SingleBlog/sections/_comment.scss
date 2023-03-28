@@ -1,0 +1,63 @@
+#comments{
+    padding: 30px 30px 0;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0 2px 48px 0 rgba(0,0,0,0.08);
+    border-radius: 5px;
+    h4{
+        color: $text-color;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .comment-items{
+        
+        .profile-photo{
+            border-radius: 5px;
+            overflow: hidden;
+            width: 70px;
+            margin-right: 20px;
+        }
+        .comment-content{
+            width: 586px;
+            .comment-headline{
+                margin-bottom: 10px;
+                position: relative;
+                h5{
+                    font-size: 14px;
+                    line-height: 28px;
+                    color: $secondary-color;
+                    font-weight: 700;
+                    margin: 0;
+                }
+                span{
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: $text-color;
+                }
+                a{
+                    position: absolute;
+                    right: 0;
+                    top: 16px;
+                    background-color: $bg-color;
+                    padding: 0 10px;
+                    font-size: 14px;
+                    color: $text-color;
+                    line-height: 25px;
+                    border-radius: 5px;
+                    transition: 0.3s;
+                    i{
+                        font-size: 12px;
+                    }
+                    &:hover{
+                        background-color: $main-color;
+                        color: white;
+                    }
+                }
+            }
+            .comment-text{
+                @include text;
+                font-size: 14px;
+            }
+        }
+    }
+}

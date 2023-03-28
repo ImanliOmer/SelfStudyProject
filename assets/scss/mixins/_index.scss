@@ -1,0 +1,30 @@
+@mixin button($width: 160px, $line-height: 42px) {
+    display: inline-block;
+    width: $width;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: $line-height;
+    color: white;
+    background-color: $main-color;
+    border: 1px solid $main-color;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+@mixin section-title($margin-bottom:20px, $line-height: 38px){
+    font-size: 28px;
+    color: $secondary-color;
+    margin-bottom: $margin-bottom;
+    font-weight: 400px;
+    letter-spacing: 1.75px;
+    line-height: $line-height;
+}
+@mixin text($margin-bottom: 30px) {
+    font-weight: 400;
+    font-size: 16px;
+    color: $text-color;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: $margin-bottom;
+}

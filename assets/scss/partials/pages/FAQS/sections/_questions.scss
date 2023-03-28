@@ -1,0 +1,65 @@
+#questions{
+    padding: 100px 0 100px;
+    .section-text{
+        h1{
+            font-size: 30px;
+            color: $main-color;
+            margin-bottom: 20px;
+        }
+        p{
+            @include text;
+        }
+        a{
+            @include button;
+            margin-bottom: 40px;
+            &:hover{
+                background: #4146e6;
+            }
+        }
+    }
+    .faq-group{
+        box-shadow: 0 2px 48px 0 rgba(0,0,0,0.08);
+        .faq-card{
+            .card-question{
+                padding: 20px 30px;
+                border-bottom: 1px solid $bg-color;
+                cursor: pointer;
+                h4{
+                    font-size: 15px;
+                    color: $secondary-color;
+                    margin: 0;
+                    transition: 0.2s;
+                }
+                &:hover{
+                    background-color: $bg-color;
+                    h4{
+                        padding-left: 10px;
+                    }
+                }
+            }
+            .answer-collapse{
+                height: 0;
+                transition: 0.3s;
+                overflow: hidden;
+                .card-answer{
+                    padding: 30px;
+                    padding-bottom: 16px;
+                    overflow: hidden;
+                    transition: 0.3s;
+                    p{
+                        @include text($margin-bottom:14px);
+                        font-size: 14px;
+                        
+                    }
+                }
+                
+                
+            }
+            .visible{
+                height: 214px;
+                transition: 0.3s;
+            }
+            
+        }
+    }
+}

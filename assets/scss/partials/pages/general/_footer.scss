@@ -1,0 +1,79 @@
+footer{
+    background-color: $main-color;
+    padding-top: 70px;
+    *{
+        font-size: 14px;
+    }
+    a{
+        color: #E5E9F7;
+    }
+    .jirono-logo{
+        margin-bottom: 30px;
+    }
+    p{
+        font-weight: 400;
+        color: #fff;
+        line-height: 26px;
+    }
+    h4{
+        font-size: 16px;
+        margin-bottom: 30px;
+        color: white;
+    }
+    .footer-list-item{
+        color: #E5E9F7;
+        display: inline-block;
+        height: 32px;
+        line-height: 32px;
+        i{
+            font-size: 10px;
+            position: relative;
+            top: -1px;
+            height: 32px;
+            line-height: 32px;
+            margin-right: 12px;
+        }
+        span{
+            transition: 0.3s;
+        }
+        &:hover{
+            span{
+                margin-left: 5px;
+            }
+        }
+    }
+    .contact{
+        p{
+            margin-bottom: 5px;
+        }
+        .adress{
+            max-width: 180px;
+        }
+    }
+    a:hover{
+        color: #E5E9F7;
+    }
+    .social-medias{
+        li{
+            i{
+                padding-right: 10px;
+                font-size: 16px;
+            }
+        }
+    }
+    .copyright{
+        padding: 30px 0;
+        border-top: 1px solid #777BFF;
+        margin: 0;
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .footer-headline-text{
+        margin-bottom: 30px;
+    }
+    .footer-menu{
+        margin-bottom: 30px;
+    }
+}

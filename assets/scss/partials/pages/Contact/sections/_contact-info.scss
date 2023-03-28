@@ -1,0 +1,51 @@
+#contact-info{
+    padding: 100px 0 60px;
+    .map{
+        box-shadow: 0 2px 48px 0 rgba(0,0,0,0.08);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .info{
+        color: white;
+        background-image: linear-gradient(135deg, $main-color 0%, #5C83E3 100%);
+        border-radius: 5px;
+        overflow: hidden;
+        padding: 30px;
+        width: 90%;
+        margin: -86px auto 0;
+        position: relative;
+
+        .info-icon{
+            font-size: 13px;
+            position: absolute;
+            margin-top: 7px;
+        }
+        h5{
+            position: relative;
+            font-size: 14px;
+            line-height: 28px;
+            display: inline-block;
+            margin: 0 30px;
+            a{
+                font-size: 14px;
+                color: white;
+                line-height: 28px;
+            }
+        }
+        .mail{
+            font-size: 16px;
+        }
+        .social-medias{
+            margin-top: 30px;
+            justify-content: center;
+            li{
+                margin: 0 7px;
+                i{
+                    padding-right: 10px;
+                    font-size: 22px;
+                    color: white;
+                }
+            }
+        }
+    }
+}

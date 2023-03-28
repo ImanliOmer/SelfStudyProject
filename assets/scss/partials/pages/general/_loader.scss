@@ -1,0 +1,42 @@
+#overlayer{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10000;
+    background-color: $main-color;
+    top: 0;
+}
+.loader{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    animation: loader 2s infinite ease-in;
+    z-index: 10000;
+}
+.loader-inner{
+    vertical-align: top;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+@keyframes loader{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,80 @@
+#design-development{
+    padding: 100px 0 80px;
+    .section-title{
+        @include section-title;
+    }
+    p{
+        @include text;
+    }
+    .design-servives-group{
+        a{
+            font-size: 14px;
+            line-height: 40px;
+            border-radius: 5px;
+            height: 40px;
+            width: 100%;
+            display: inline-block;
+            background-color: white;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 48px 0 rgba(0,0,0,0.08);
+            color: $secondary-color;
+            position: relative;
+            overflow: hidden;
+            i{
+                margin-left: 22px;
+                margin-right: 32px;
+                font-size: 10px;
+                color: $secondary-color;
+                position: relative;
+                z-index: 1;
+                transition: 0.3s;
+            }
+            span{
+                transition: 0.3s;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                background-color: $bg-color;
+                height: 100px;
+                width: 110px;
+                transform: rotate(60deg);
+                left: -46px;
+                z-index: 0;
+                transition: 0.3s;
+            }
+            &:hover{
+                &::before{
+                    background-color: $main-color;
+                    height: 115px;
+                }
+                span{
+                    margin-left: 5px;
+                }
+                i{
+                    color: white;
+                    transform: translateX(3px);
+                }
+            }
+        }
+        .active{
+            &::before{
+                background-color: $main-color;
+                height: 115px;
+            }
+            span{
+                margin-left: 5px;
+            }
+            i{
+                color: white;
+                transform: translateX(3px);
+            }
+        }
+    }
+}
+@media only screen and (max-width: 992px) {
+    .design-bg-box{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
